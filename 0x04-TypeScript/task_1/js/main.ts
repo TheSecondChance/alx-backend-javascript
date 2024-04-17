@@ -40,7 +40,9 @@ class StudentClass implements classInterface{
 interface StudentConstructor {
   (firstName: string, lastName: string): classInterface;
 }
-
+export function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
 const student = new StudentClass("Est", "NEA");
 console.log(student.displayName())
 console.log(student.workOnHomework())
